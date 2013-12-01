@@ -10,7 +10,7 @@ Loading the Google Maps API is an asynchronous process which means the API is no
 
 *JS*
 ```javascript
-    onMapsLoaded = function() {
+    window.onMapsLoaded = function() {
         console.log('Google Maps API is ready');
     }
 ```
