@@ -32,7 +32,7 @@ Usage
 ```javascript
 require.config({
     paths: {
-        'gmaps-plugin': 'lib/require-gmaps',
+        'gmaps-plugin': 'require-gmaps-plugin',
         'gmaps-api': 'http://maps.googleapis.com/maps/api/js?key={your-api-key}&sensor=false'
     }
 });
