@@ -11,7 +11,7 @@ Loading the Google Maps API is an asynchronous process which means the API is no
 *JS*
 ```javascript
     onMapsLoaded = function() {
-        console.log('Google Maps API is ready
+        console.log('Google Maps API is ready');
     }
 ```
 
@@ -22,7 +22,7 @@ Solution
 
 The solution is that the plugin dynamically creates the script tag that loads the Google Maps script and registers said callback function. Only after the callback is executed it tells requirejs that the API is loaded.
 
-Another feature of the plugin is that it also handles the case where the script can not be loaded because no internet connection is available. In this case it will fail silently and still tell requirejs that the script was loaded. This means when using this plugin you must check if window.google.maps is defined to find out whether the script was loaded or not.
+Another feature of the plugin is that it also handles the case where the script can not be loaded because no internet connection is available. In this case it fails silently and still tells requirejs that the script was loaded. This means when using this plugin you must check if window.google.maps is defined to find out whether the script was loaded or not.
 
 I got the basic idea for the plugin from @millerdedeiros async plugin (https://github.com/millermedeiros/requirejs-plugins).
 
